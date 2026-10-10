@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>necirvan</title>
+<style>
+:root{--bg:#f4f2ec;--fg:#1a1a18;--dim:#7a776d;--acc:#b3320f;--line:#d8d4c8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d0c;--fg:#d9d6cc;--dim:#76736a;--acc:#e8963a;--line:#262622}}
+:root[data-theme="dark"]{--bg:#0d0d0c;--fg:#d9d6cc;--dim:#76736a;--acc:#e8963a;--line:#262622}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+main{max-width:680px;margin:0 auto;padding:56px 24px 72px}
+h1{font-size:15px;font-weight:600;margin:0}
+h2{font-size:15px;font-weight:400;color:var(--dim);margin:56px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+p{margin:0 0 12px}
+a{color:var(--fg);text-decoration:underline;text-decoration-color:var(--acc);text-underline-offset:3px}
+a:hover{color:var(--acc)}
+.dim{color:var(--dim)}
+.acc{color:var(--acc)}
+.row{display:grid;grid-template-columns:64px 1fr;gap:0 16px}
+.addr{color:var(--dim);user-select:none}
+.cur{display:inline-block;width:.6em;height:1.1em;background:var(--acc);vertical-align:text-bottom;animation:b 1.1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.cur{animation:none}}
+.bench{margin:10px 0 0;overflow-x:auto}
+.bench table{border-collapse:collapse;min-width:100%}
+.bench td{padding:2px 24px 2px 0;white-space:nowrap}
+footer{margin-top:72px;color:var(--dim);font-size:13px}
+@media (max-width:480px){.row{grid-template-columns:1fr}.addr{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header class="row">
+<div class="addr">0x0000</div>
+<div>
+<h1>necirvan<span class="acc">@</span>warwick:~$ <span class="cur"></span></h1>
+<p class="dim">2nd year cs undergrad. i like c++.</p>
+</div>
+</header>
+
+<h2>// about</h2>
+<div class="row"><div class="addr">0x0010</div>
+<div>
+<p>computer science at the university of warwick. before that: a-levels in computer science, maths and further maths.</p>
+<p>interested in low-level systems and performance engineering. heading toward low-latency software.</p>
+</div></div>
+
+<h2>// projects</h2>
+<div class="row"><div class="addr">0x0100</div>
+<div>
+<p><a href="https://github.com/NecirvanA/orderbook-cpp">orderbook-cpp</a> <span class="dim">&mdash; c++</span></p>
+<p>a high-performance, headerized, limit order book. fully benchmarked using google test.</p>
+<div class="bench"><table>
+<tr><td class="dim">insert</td><td>~15M ops/s</td></tr>
+<tr><td class="dim">match</td><td>~8.5M ops/s</td></tr>
+</table></div>
+</div></div>
+
+<div class="row" style="margin-top:28px"><div class="addr">0x0200</div>
+<div>
+<p><a href="https://github.com/NecirvanA/gomoku">gomoku</a> <span class="dim">&mdash; c#, monogame</span></p>
+<p>a desktop app with co-op and singleplayer against ai.</p>
+</div></div>
+
+<div class="row" style="margin-top:28px"><div class="addr">0x0300</div>
+<div>
+<p>dbms <span class="dim">&mdash; c++</span> <span class="acc">[wip]</span></p>
+<p>a database management system in c++. still under construction.</p>
+</div></div>
+
+<h2>// hackathons</h2>
+<div class="row"><div class="addr">0x0400</div>
+<div>
+<p>warwick bpuzzled <span class="dim">&mdash; 6th place</span></p>
+</div></div>
+
+<div class="row" style="margin-top:28px"><div class="addr">0x0410</div>
+<div>
+<p><a href="https://devpost.com/software/metra-1bw3hc">metra</a> <span class="dim">&mdash; python, fastapi, next.js &middot; warwick hack 2025</span></p>
+<p>a dashboard that clusters news coverage of the same event and compares how reliable each source is.</p>
+</div></div>
+
+<h2>// links</h2>
+<div class="row"><div class="addr">0x0500</div>
+<div>
+<p><a href="https://github.com/NecirvanA">github.com/NecirvanA</a></p>
+<p><a href="https://www.linkedin.com/in/necirvanaltindag/">linkedin.com/in/necirvanaltindag</a></p>
+</div></div>
+
+<footer>
+<span class="dim">necirvan altindag, 2026.</span>
+</footer>
+</main>
+</body>
+</html>
